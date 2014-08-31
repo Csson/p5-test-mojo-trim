@@ -58,11 +58,3 @@ it under the same terms as Perl itself.
 
 - [Test::Mojo](https://metacpan.org/pod/Test::Mojo)
 - [Test::Mojo::Most](https://metacpan.org/pod/Test::Mojo::Most)
-
-# POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 63:
-
-    &#x3d;over without closing =back
