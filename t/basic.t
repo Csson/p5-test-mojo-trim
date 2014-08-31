@@ -1,8 +1,8 @@
 use strict;
 use Test::More;
-use Test::Mojo::Trim;
 
-# replace with the actual test
-ok 1;
+BEGIN {
+	use_ok('Test::Mojo::Trim');
+}
 
 done_testing;
