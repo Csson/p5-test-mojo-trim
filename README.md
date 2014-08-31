@@ -26,7 +26,7 @@ Test::Mojo::Trim - Test::Mojo expanded
         <p>A paragraph.</p>
     </div>
 
-# DESCRIPTIdsafasdfasdfON
+# DESCRIPTION
 
 Test::Mojo::Trim is an extension to Test::Mojo, that adds an additional string comparison function.
 
@@ -55,3 +55,14 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 # SEE ALSO
+
+- [Test::Mojo](https://metacpan.org/pod/Test::Mojo)
+- [Test::Mojo::Most](https://metacpan.org/pod/Test::Mojo::Most)
+
+# POD ERRORS
+
+Hey! **The above document had some coding errors, which are explained below:**
+
+- Around line 63:
+
+    &#x3d;over without closing =back

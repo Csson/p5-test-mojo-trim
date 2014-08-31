@@ -52,7 +52,7 @@ Test::Mojo::Trim - Test::Mojo expanded
         <p>A paragraph.</p>
     </div>
 
-=head1 DESCRIPTIdsafasdfasdfON
+=head1 DESCRIPTION
 
 Test::Mojo::Trim is an extension to Test::Mojo, that adds an additional string comparison function.
 
@@ -81,5 +81,15 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
 
 =head1 SEE ALSO
+
+=over 4
+
+=item *
+
+L<Test::Mojo>
+
+=item *
+
+L<Test::Mojo::Most>
 
 =cut
