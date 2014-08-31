@@ -3,17 +3,20 @@ package Test::Mojo::Trim;
 use strict;
 
 use Mojo::Base 'Test::Mojo';
-use Mojo::DOM;
+use Mojo::Util 'squish';
 our $VERSION = '0.01';
 
 sub trimmed_content_is {
     my $self = shift;
-    my $value = Mojo::DOM->new(shift)->to_string;
+    my $value = squish(Mojo::DOM->new(shift)->to_string);
     my $desc = shift;
 
-    my $got = Mojo::DOM->new($self->tx->res->text)->to_string;
+    my $got = squish($self->tx->res->dom->to_string);
+    $value =~ s{> <}{><}g;
+    $got =~ s{> <}{><}g;
+    $desc ||= 'exact match for content';
 
-    return $self->_test('trimmed is', $got, $value, $desc);
+    return $self->_test('is', $got, $value, $desc);
 }
 
 1;
@@ -35,13 +38,10 @@ Test::Mojo::Trim - Test::Mojo expanded
     my $test = Test::Mojo::Trim->new;
 
     get '/test_1';
-    get '/test_2';
 
     my $compared_to = qq{ <div><h1>Header</h1><p>A paragraph.</p></div> };
 
     $test->get_ok('/test_1')->status_is(200)->trimmed_content_is($compared_to);
-
-    $test->get_ok('/test_2')->status_is(200)->trimmed_all_content_is($compared_to);
     
     done_testing();
 
@@ -52,20 +52,13 @@ Test::Mojo::Trim - Test::Mojo expanded
         <p>A paragraph.</p>
     </div>
 
-    @@ the_second_test.html.ep
-    <div>
-        <h1>    Header    </h1>
-        <p>  A paragraph.   </p>
-    </div>
-
-
 =head1 DESCRIPTIdsafasdfasdfON
 
-Test::Mojo::Trim is an extension to Test::Mojo, that adds a couple of string comparison functions.
+Test::Mojo::Trim is an extension to Test::Mojo, that adds an additional string comparison function.
 
 =head1 METHODS
 
-L<Test::Mojo::Trim> inherits all methods from L<Test::Mojo> and implements the following new ones.
+L<Test::Mojo::Trim> inherits all methods from L<Test::Mojo> and implements the following new one.
 
 =head2 trimmed_content_is
 
@@ -73,14 +66,6 @@ L<Test::Mojo::Trim> inherits all methods from L<Test::Mojo> and implements the f
 
 Removes all whitespace between tags from the two strings that are compared. 
 That is, if a E<gt> and E<lt> is separated only by whitespace, that whitespace is removed.
-
-=head2 trimmed_all_content_is
-
-    $test->get_ok('/test')->trimmed_all_content_is('<html></html>');
-
-This is similar to C<trimmed_content_is>, except that all whitespace preceeding a E<lt>, and all whitespace following a E<gt> is removed.
-
-This could have unintended consequenses depending on how your document looks (it doesn't check if the E<lt> and E<gt> are parts of a C<E<lt>tagE<gt>> or not).
 
 =head1 AUTHOR
 
