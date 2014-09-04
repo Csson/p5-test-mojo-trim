@@ -1,6 +1,8 @@
 Revision history for Test-Mojo-Trim
 
 {{$NEXT}}
+    - If the request fails it dumps the Mojolicious error page, which is hard ro read.
+      This release extracts the specific action and adds it to the test description.
 
 0.03  2014-08-31 18:06:32 CEST
     - Improved test message

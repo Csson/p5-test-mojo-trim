@@ -12,9 +12,13 @@ sub trimmed_content_is {
     my $desc = shift;
 
     my $got = squish($self->tx->res->dom->to_string);
+    my $error = defined $self->tx->res->dom->find('#error') ? $self->tx->res->dom->find('#error')->text : undef;
+    chomp $error;
+
     $value =~ s{> <}{><}g;
     $got =~ s{> <}{><}g;
     $desc ||= 'exact match for trimmed content';
+    $desc .= (defined $error ? " (Error: $error)" : '');
 
     return $self->_test('is', $got, $value, $desc);
 }
