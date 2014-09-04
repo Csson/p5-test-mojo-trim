@@ -4,7 +4,7 @@ use strict;
 
 use Mojo::Base 'Test::Mojo';
 use Mojo::Util 'squish';
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 sub trimmed_content_is {
     my $self = shift;
