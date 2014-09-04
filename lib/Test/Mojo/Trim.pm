@@ -18,7 +18,7 @@ sub trimmed_content_is {
     $value =~ s{> <}{><}g;
     $got =~ s{> <}{><}g;
     $desc ||= 'exact match for trimmed content';
-    $desc .= (defined $error ? " (Error: $error)" : '');
+    $desc .= (defined $error && length $error ? " (Error: $error)" : '');
 
     return $self->_test('is', $got, $value, $desc);
 }
