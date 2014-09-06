@@ -32,6 +32,8 @@ __END__
 
 Test::Mojo::Trim - Test::Mojo expanded
 
+=for HTML <a href="https://travis-ci.org/Csson/p5-test-mojo-trim"><img src="https://travis-ci.org/Csson/p5-test-mojo-trim.svg?branch=master"></a>
+
 =head1 SYNOPSIS
     
     use Mojo::Base -strict;
