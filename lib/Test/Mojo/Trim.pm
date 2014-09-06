@@ -30,9 +30,11 @@ __END__
 
 =head1 NAME
 
+=for html <p><a style="float: right;" href="https://travis-ci.org/Csson/p5-test-mojo-trim"><img src="https://travis-ci.org/Csson/p5-test-mojo-trim.svg?branch=master"></a>
+
 Test::Mojo::Trim - Test::Mojo expanded
 
-=for HTML <a href="https://travis-ci.org/Csson/p5-test-mojo-trim"><img src="https://travis-ci.org/Csson/p5-test-mojo-trim.svg?branch=master"></a>
+
 
 =head1 SYNOPSIS
     
