@@ -20,7 +20,7 @@ Test::Mojo::Trim - Test::Mojo expanded
     my $compared_to = qq{ <div><h1>Header</h1><p>A paragraph.</p></div> };
 
     $test->get_ok('/test_1')->status_is(200)->trimmed_content_is($compared_to);
-    
+
     done_testing();
 
     __DATA__
@@ -42,7 +42,7 @@ Test::Mojo::Trim is an extension to Test::Mojo, that adds an additional string c
 
     $test->get_ok('/test')->trimmed_content_is('<html></html>');
 
-Removes all whitespace between tags from the two strings that are compared. 
+Removes all whitespace between tags from the two strings that are compared.
 That is, if a > and < is separated only by whitespace, that whitespace is removed.
 
 # AUTHOR

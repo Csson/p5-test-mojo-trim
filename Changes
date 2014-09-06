@@ -1,6 +1,8 @@
 Revision history for Test-Mojo-Trim
 
 {{$NEXT}}
+    - Added Travis build status.
+    - Added [Test::EOL] and [Test::EOF]
 
 0.06  2014-09-06 07:29:03 CEST
     - Fixed faulty Perl version requirement
