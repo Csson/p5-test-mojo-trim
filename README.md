@@ -1,10 +1,10 @@
 # NAME
 
-<div>
-    <p><a style="float: right;" href="https://travis-ci.org/Csson/p5-test-mojo-trim"><img src="https://travis-ci.org/Csson/p5-test-mojo-trim.svg?branch=master">&nbsp;</a>
-</div>
-
 Test::Mojo::Trim - Test::Mojo expanded
+
+<div>
+    <p><a style="float: left;" href="https://travis-ci.org/Csson/p5-test-mojo-trim"><img src="https://travis-ci.org/Csson/p5-test-mojo-trim.svg?branch=master">&nbsp;</a>
+</div>
 
 # SYNOPSIS
 
