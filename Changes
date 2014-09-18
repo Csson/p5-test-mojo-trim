@@ -1,6 +1,8 @@
 Revision history for Test-Mojo-Trim
 
 {{$NEXT}}
+
+0.08  2014-09-18 21:19:44 CEST
     - In case of request failer (ie status 500) the result is parsed and
       output in a more readable style.
     - Fix missing build prereqs.
