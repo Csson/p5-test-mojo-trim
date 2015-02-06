@@ -1,10 +1,10 @@
 {
-   "abstract" : "Test::Mojo expanded",
+   "abstract" : "Trim strings for Test::Mojo",
    "author" : [
-      "Erik Carlsson <csson@cpan.org>"
+      "Erik Carlsson <info@code301.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Milla version v1.0.5, Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.140640",
+   "generated_by" : "Dist::Zilla version 5.031, CPAN::Meta::Converter version 2.143240",
    "license" : [
       "perl_5"
    ],
@@ -52,21 +52,24 @@
          }
       }
    },
+   "provides" : {
+      "Test::Mojo::Trim" : {
+         "file" : "lib/Test/Mojo/Trim.pm",
+         "version" : "0.0901"
+      }
+   },
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "web" : "https://github.com/Csson/p5-test-mojo-trim/issues"
       },
-      "homepage" : "https://github.com/Csson/p5-test-mojo-trim",
+      "homepage" : "https://metacpan.org/release/Test-Mojo-Trim",
       "repository" : {
          "type" : "git",
          "url" : "https://github.com/Csson/p5-test-mojo-trim.git",
          "web" : "https://github.com/Csson/p5-test-mojo-trim"
       }
    },
-   "version" : "0.09",
-   "x_contributors" : [
-      "Erik Carlsson <info@code301.com>"
-   ]
+   "version" : "0.0901"
 }
 
