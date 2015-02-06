@@ -1,35 +1,60 @@
 Revision history for Test-Mojo-Trim
 
 {{$NEXT}}
+ [API Changes]
 
-0.09  2014-12-04 15:30:57 CET
-    - Better use of Mojo::DOM api.
+ [Bug Fixes]
 
-0.08  2014-09-18 21:19:44 CEST
-    - In case of request failer (ie status 500) the result is parsed and
-      output in a more readable style.
-    - Fix missing build prereqs.
+ [Documentation]
 
-0.07  2014-09-06 15:31:51 CEST
-    - Added Travis build status.
-    - Added [Test::EOL] and [Test::EOF]
+ [Enhancements]
 
-0.06  2014-09-06 07:29:03 CEST
-    - Fixed faulty Perl version requirement
+ [Meta]
 
-0.05  2014-09-04 20:44:07 CEST
-    - Fixed a cosmetic problem related to last release where it would think that a
-      request error had occured
+ [New Features]
 
-0.04  2014-09-04 16:44:56 CEST
-    - If the request fails it dumps the Mojolicious error page, which is hard ro read.
-      This release extracts the specific action and adds it to the test description.
+ [Revision]
 
-0.03  2014-08-31 18:06:32 CEST
-    - Improved test message
+0.0901 2015-02-06T23:16:29Z CET
+ [Documentation]
+ - Rebuilt with Podweaver.
 
-0.02  2014-08-31 11:23:53 CEST
-    - Added missing dependency
+ [Meta]
+ - No functional changes.
+ - Changed versioning to x.yyyy.
+ - Now uses @Author::CSSON dist zilla bundle, expanded.
+ - Removed the last traces of Dist::Milla.
 
-0.01  2014-08-31 10:46:14 CEST
-    - Initial release.
+0.0900 2014-12-04T15:30:57Z CET
+ - Better use of Mojo::DOM api.
+
+0.08 2014-09-18T21:19:44Z CEST
+ - In case of request failer (ie status 500) the result is parsed and
+   output in a more readable style.
+ - Fix missing build prereqs.
+
+0.07 2014-09-06T15:31:51Z CEST
+ - Added Travis build status.
+ - Added [Test::EOL] and [Test::EOF]
+
+0.06 2014-09-06T07:29:03Z CEST
+ - Fixed faulty Perl version requirement
+
+0.05 2014-09-04T20:44:07Z CEST
+ - Fixed a cosmetic problem related to last release where it would think
+   that a request error had occured
+
+0.04 2014-09-04T16:44:56Z CEST
+ - If the request fails it dumps the Mojolicious error page, which is hard
+   ro read. This release extracts the specific action and adds it to the
+   test description.
+
+0.03 2014-08-31T18:06:32Z CEST
+ - Improved test message
+
+0.02 2014-08-31T11:23:53Z CEST
+ - Added missing dependency
+
+0.01 2014-08-31T10:46:14Z CEST
+ - Initial release.
+
