@@ -1,12 +1,20 @@
 # NAME
 
-Test::Mojo::Trim - Test::Mojo expanded
+Test::Mojo::Trim - Trim strings for Test::Mojo
+
+# VERSION
+
+Version 0.0901, released 2015-02-06.
+
+# SYNOPSIS
+
+# DESCRIPTION
+
+Test::Mojo::Trim is an extension to Test::Mojo, that adds an additional string comparison function.
 
 <div>
     <p><a style="float: left;" href="https://travis-ci.org/Csson/p5-test-mojo-trim"><img src="https://travis-ci.org/Csson/p5-test-mojo-trim.svg?branch=master">&nbsp;</a>
 </div>
-
-# SYNOPSIS
 
     use Mojo::Base -strict;
     use Mojolicious::Lite;
@@ -30,10 +38,6 @@ Test::Mojo::Trim - Test::Mojo expanded
         <p>A paragraph.</p>
     </div>
 
-# DESCRIPTION
-
-Test::Mojo::Trim is an extension to Test::Mojo, that adds an additional string comparison function.
-
 # METHODS
 
 [Test::Mojo::Trim](https://metacpan.org/pod/Test::Mojo::Trim) inherits all methods from [Test::Mojo](https://metacpan.org/pod/Test::Mojo) and implements the following new one.
@@ -45,20 +49,26 @@ Test::Mojo::Trim is an extension to Test::Mojo, that adds an additional string c
 Removes all whitespace between tags from the two strings that are compared.
 That is, if a > and < is separated only by whitespace, that whitespace is removed.
 
-# AUTHOR
-
-Erik Carlsson <info@code301.com>
-
-# COPYRIGHT
-
-Copyright 2014- Erik Carlsson
-
-# LICENSE
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
 # SEE ALSO
 
 - [Test::Mojo](https://metacpan.org/pod/Test::Mojo)
 - [Test::Mojo::Most](https://metacpan.org/pod/Test::Mojo::Most)
+
+# SOURCE
+
+[https://github.com/Csson/p5-test-mojo-trim](https://github.com/Csson/p5-test-mojo-trim)
+
+# HOMEPAGE
+
+[https://metacpan.org/release/Test-Mojo-Trim](https://metacpan.org/release/Test-Mojo-Trim)
+
+# AUTHOR
+
+Erik Carlsson <info@code301.com>
+
+# COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2015 by Erik Carlsson.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.

@@ -4,7 +4,9 @@ use strict;
 
 use Mojo::Base 'Test::Mojo';
 use Mojo::Util 'squish';
-our $VERSION = '0.09';
+
+# VERSION
+# ABSTRACT: Trim strings for Test::Mojo
 
 sub trimmed_content_is {
     my $self = shift;
@@ -39,13 +41,10 @@ __END__
 
 =encoding utf-8
 
-=head1 NAME
-
-Test::Mojo::Trim - Test::Mojo expanded
-
-=for html <p><a style="float: left;" href="https://travis-ci.org/Csson/p5-test-mojo-trim"><img src="https://travis-ci.org/Csson/p5-test-mojo-trim.svg?branch=master">&nbsp;</a>
 
 =head1 SYNOPSIS
+
+=for html <p><a style="float: left;" href="https://travis-ci.org/Csson/p5-test-mojo-trim"><img src="https://travis-ci.org/Csson/p5-test-mojo-trim.svg?branch=master">&nbsp;</a>
 
     use Mojo::Base -strict;
     use Mojolicious::Lite;
@@ -84,31 +83,10 @@ L<Test::Mojo::Trim> inherits all methods from L<Test::Mojo> and implements the f
 Removes all whitespace between tags from the two strings that are compared.
 That is, if a E<gt> and E<lt> is separated only by whitespace, that whitespace is removed.
 
-=head1 AUTHOR
-
-Erik Carlsson E<lt>info@code301.comE<gt>
-
-=head1 COPYRIGHT
-
-Copyright 2014- Erik Carlsson
-
-=head1 LICENSE
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
 =head1 SEE ALSO
 
-=over 4
-
-=item *
-
-L<Test::Mojo>
-
-=item *
-
-L<Test::Mojo::Most>
-
-=back
+=for :list
+* L<Test::Mojo>
+* L<Test::Mojo::Most>
 
 =cut
