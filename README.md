@@ -4,7 +4,7 @@ Test::Mojo::Trim - Trim strings for Test::Mojo
 
 # VERSION
 
-Version 0.0901, released 2015-02-06.
+Version 0.0902, released 2015-02-06.
 
 # SYNOPSIS
 

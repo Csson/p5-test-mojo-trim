@@ -55,7 +55,7 @@
    "provides" : {
       "Test::Mojo::Trim" : {
          "file" : "lib/Test/Mojo/Trim.pm",
-         "version" : "0.0901"
+         "version" : "0.0902"
       }
    },
    "release_status" : "stable",
@@ -70,6 +70,6 @@
          "web" : "https://github.com/Csson/p5-test-mojo-trim"
       }
    },
-   "version" : "0.0901"
+   "version" : "0.0902"
 }
 
