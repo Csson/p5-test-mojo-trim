@@ -69,7 +69,6 @@
             "Dist::Zilla::Plugin::TravisYML" : "0",
             "Dist::Zilla::Plugin::UploadToCPAN" : "0",
             "Pod::Elemental::Transformer::List" : "0",
-            "Pod::Elemental::Transformer::Splint" : "0",
             "Pod::Weaver::Plugin::SingleEncoding" : "0",
             "Pod::Weaver::Plugin::Transformer" : "0",
             "Pod::Weaver::PluginBundle::CorePrep" : "0",
@@ -102,7 +101,7 @@
    "provides" : {
       "Test::Mojo::Trim" : {
          "file" : "lib/Test/Mojo/Trim.pm",
-         "version" : "0.0903"
+         "version" : "0.0904"
       }
    },
    "release_status" : "stable",
@@ -117,6 +116,6 @@
          "web" : "https://github.com/Csson/p5-test-mojo-trim"
       }
    },
-   "version" : "0.0903"
+   "version" : "0.0904"
 }
 

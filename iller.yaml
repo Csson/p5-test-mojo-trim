@@ -20,3 +20,5 @@ name: Test-Mojo-Trim
 
 +plugins:
   - +config: Author::CSSON
+
+  - +remove_plugin: Splint
