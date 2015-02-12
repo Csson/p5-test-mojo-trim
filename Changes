@@ -8,8 +8,10 @@ Revision history for Test-Mojo-Trim
  [Documentation]
 
  [Enhancements]
+ - Updated usage of deprecated syntax to current api.
 
  [Meta]
+ - Removed cpanfile, now prereqs are set in dist.ini.
 
  [New Features]
 
