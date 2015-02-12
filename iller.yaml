@@ -18,5 +18,5 @@ name: Test-Mojo-Trim
 ---
 +doctype: weaver
 
-plugins:
- - +config: Author::CSSON
++plugins:
+  - +config: Author::CSSON
