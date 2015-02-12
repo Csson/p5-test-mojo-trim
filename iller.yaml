@@ -1,0 +1,22 @@
+---
++doctype: dist
+name: Test-Mojo-Trim
+
++prereqs:
+  runtime:
+    requires:
+      - perl: 5.010001
+      - Mojolicious: 5.00
+
++plugins:
+ - +config: Author::CSSON
+
+ - +add_plugin: TravisYML
+   +before: Git::Tag
+   perl_version: 5.20
+
+---
++doctype: weaver
+
+plugins:
+ - +config: Author::CSSON
