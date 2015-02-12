@@ -8,14 +8,27 @@ Revision history for Test-Mojo-Trim
  [Documentation]
 
  [Enhancements]
+
+ [Meta]
+
+ [New Features]
+
+ [Requirements]
+
+ [Revision]
+
+ [Testing]
+
+0.0904 2015-02-12T21:55:01Z CET
+ [Requirements]
+ - Removed an unused Pod::Weaver plugin from prereqs.
+
+0.0903 2015-02-12T18:18:19Z CET
+ [Enhancements]
  - Updated usage of deprecated syntax to current api.
 
  [Meta]
  - Removed cpanfile, now prereqs are set in dist.ini.
-
- [New Features]
-
- [Revision]
 
 0.0902 2015-02-06T23:23:26Z CET
  [Revision]
