@@ -2,6 +2,7 @@ package Test::Mojo::Trim;
 
 use strict;
 
+use Mojo::DOM;
 use Mojo::Base 'Test::Mojo';
 use Mojo::Util 'squish';
 
@@ -24,13 +25,10 @@ sub trimmed_content_is {
 
     if(defined $error && length $error) {
         $desc .= (defined $error && length $error ? " (Error: $error)" : '');
-        my $table = $dom->find('#context table');
-        if($table) {
-            $table->find('tr')->each(sub {
-                $desc .= $_->all_text . "\n";
-            });
-            $got = '<see error>';
-        }
+        my $table = $dom->find('#context table')->each(sub {
+            $desc .= $_->find('td')->map(sub { $_->text })->join(' ');
+        });
+        $got = '<see error>';
     }
 
     return $self->_test('is', $got, $value, $desc);
@@ -82,6 +80,7 @@ L<Test::Mojo::Trim> inherits all methods from L<Test::Mojo> and implements the f
 
 Removes all whitespace between tags from the two strings that are compared.
 That is, if a E<gt> and E<lt> is separated only by whitespace, that whitespace is removed.
+Any leading or trailing whitespace is also removed.
 
 =head1 SEE ALSO
 
