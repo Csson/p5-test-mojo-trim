@@ -8,7 +8,7 @@ use Mojo::Util 'trim';
 
 # ABSTRACT: Trim strings for Test::Mojo
 # AUTHORITY
-our $VERSION = '0.1000';
+our $VERSION = '0.1001';
 
 sub trimmed_content_is {
     my $self = shift;
