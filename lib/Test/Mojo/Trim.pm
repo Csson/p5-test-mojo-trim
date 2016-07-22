@@ -4,10 +4,11 @@ use strict;
 
 use Mojo::DOM;
 use Mojo::Base 'Test::Mojo';
-use Mojo::Util 'squish';
+use Mojo::Util 'trim';
 
-# VERSION
 # ABSTRACT: Trim strings for Test::Mojo
+# AUTHORITY
+our $VERSION = '0.1000';
 
 sub trimmed_content_is {
     my $self = shift;
@@ -34,6 +35,12 @@ sub trimmed_content_is {
     return $self->_test('is', $got, $value, $desc);
 }
 
+sub squish {
+    my $string = trim @_;
+    $string =~ s{\s+}{ }g;
+    return $string;
+}
+
 1;
 __END__
 
@@ -41,8 +48,6 @@ __END__
 
 
 =head1 SYNOPSIS
-
-=for html <p><a style="float: left;" href="https://travis-ci.org/Csson/p5-test-mojo-trim"><img src="https://travis-ci.org/Csson/p5-test-mojo-trim.svg?branch=master">&nbsp;</a>
 
     use Mojo::Base -strict;
     use Mojolicious::Lite;
