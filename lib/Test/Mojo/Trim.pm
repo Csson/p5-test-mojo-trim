@@ -32,7 +32,12 @@ sub trimmed_content_is {
         $got = '<see error>';
     }
 
-    return $self->test('is', $got, $value, $desc);
+    my $method = $self->can('test');
+    if ( !$method ) {
+        $method = $self->can('_test');
+    }
+
+    return $self->$method('is', $got, $value, $desc);
 }
 
 sub squish {
