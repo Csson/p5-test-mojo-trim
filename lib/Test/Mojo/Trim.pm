@@ -32,7 +32,7 @@ sub trimmed_content_is {
         $got = '<see error>';
     }
 
-    return $self->_test('is', $got, $value, $desc);
+    return $self->test('is', $got, $value, $desc);
 }
 
 sub squish {
